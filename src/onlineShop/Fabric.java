@@ -7,13 +7,13 @@ public enum Fabric {
     DISTRICT(4),
     LYCRA(5);
 
-    private final int extraCost;
+    private final int price;
 
     Fabric(int extraCost) {
-        this.extraCost = extraCost;
+        this.price = extraCost;
     }
 
-    public int getExtraCost() {
-        return extraCost;
+    public int getPrice() {
+        return price;
     }
 }
