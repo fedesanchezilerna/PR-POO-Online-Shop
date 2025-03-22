@@ -17,8 +17,6 @@ public abstract class TShirt extends Product{
 
     @Override
     public String toString() {
-        return "TShirt{" +
-               "fabric=" + fabric +
-               "} " + super.toString();
+        return super.toString();
     }
 }

@@ -24,8 +24,6 @@ public class VNeckT extends TShirt {
 
     @Override
     public String toString() {
-        return "VNeckT{" +
-               "hasPocket=" + hasPocket +
-               "} " + super.toString();
+        return super.toString();
     }
 }

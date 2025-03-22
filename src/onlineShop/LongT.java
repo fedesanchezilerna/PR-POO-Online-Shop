@@ -24,8 +24,6 @@ public class LongT extends TShirt {
 
     @Override
     public String toString() {
-        return "LongT{" +
-               "hasPocket=" + hasPocket +
-               "} " + super.toString();
+        return super.toString() + String.format(" %-10s", hasPocket);
     }
 }

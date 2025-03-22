@@ -79,7 +79,7 @@ public abstract class Product {
 
     @Override
     public String toString() {
-        return String.format("%-10s %-10s %-10.2f %-10s %-10s %-10s",
+        return String.format("%-9s %-9s %-9.2f %-9s %-9s %-9s",
                 barCode, desc, price,
                 printImage != null ? printImage.name() : "NULL",
                 color.name(), onSell);

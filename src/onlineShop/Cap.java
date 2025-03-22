@@ -9,6 +9,14 @@ public class Cap extends Product {
         this.price = price();
     }
 
+    public Visor getVisor() {
+        return visor;
+    }
+
+    public void setVisor(Visor visor) {
+        this.visor = visor;
+    }
+
     @Override
     public float price() {
         return visor == Visor.FLAT ? Product.VISOR_FLAT : Product.VISOR_CURVED;
@@ -16,8 +24,6 @@ public class Cap extends Product {
 
     @Override
     public String toString() {
-        return "Cap{" +
-               "visor=" + visor +
-               "} " + super.toString();
+        return super.toString() + String.format("%10s%10s%10s %-10s", "", "", "", visor.name());
     }
 }

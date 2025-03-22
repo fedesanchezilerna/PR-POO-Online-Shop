@@ -36,9 +36,6 @@ public class BasicT extends TShirt {
 
     @Override
     public String toString() {
-        return "BasicT{" +
-               "hasPocket=" + hasPocket +
-               ", hasButtons=" + hasButtons +
-               "} " + super.toString();
+        return super.toString() + String.format(" %-10s %-10s", hasPocket, hasButtons);
     }
 }
