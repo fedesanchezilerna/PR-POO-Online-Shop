@@ -29,9 +29,11 @@ public class BasicT extends TShirt {
 
     @Override
     public float price() {
-        if (hasPocket) return Product.PRICE_BASICT + Product.PRICE_POCKET + fabric.getPrice();
-        if (hasButtons) return Product.PRICE_BASICT + Product.PRICE_BUTTONS + fabric.getPrice();
-        return Product.PRICE_BASICT + fabric.getPrice();
+        float total = Product.PRICE_BASICT + fabric.getPrice();
+        if (hasPocket) total += Product.PRICE_POCKET;
+        if (hasButtons) total += Product.PRICE_BUTTONS;
+        if (printImage != null) total += Product.PRICE_IMAGE;
+        return total;
     }
 
     @Override
